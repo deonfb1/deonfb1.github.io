@@ -3,6 +3,8 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=709301793723961&autoLogAppEvents=1" nonce="9TyKp0So"></script>
 <script>
     window.fbAsyncInit = function() {
       FB.init({
@@ -36,9 +38,10 @@ function checkLoginState() {
 }, {scope: 'instagram_basic,pages_show_list,pages_read_engagement'});
 }
   </script>
-  <fb:login-button 
+<fb:login-button 
   scope="public_profile,email"
   onlogin="checkLoginState();">
+  <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 </fb:login-button>
 </body>
 </html>
