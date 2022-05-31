@@ -1,0 +1,8 @@
+curl -i -X GET "https://graph.instagram.com/access_token
+  ?grant_type=ig_exchange_token
+  &client_secret=38a8849d4e5154e0415a680074235754
+  &access_token=IGQVJXMndjZA2VqZA1V5VUNaSHd1MVpiMVp0UmdRdkt1UUQwLXl1TUlzQmFhZATZAWUWl4S3llNjRmRFdWM3VDUUFxUTNkMWh2aUd1RWstXzAtMEhhYmJVSndzUTVtdEhNaU1QZAjJ6bGZALZAmNkYzZA4cm5wejhieDh0bk82RnJj"
+
+  <!-- long token: 
+ IGQVJYeWUwMGQydGNiTGN4ZAGxwc01PVlhRR3EycDF1LVVlNXlfZA0RTV3FBT3pqbE1tYWdNRUpDSWttR1A1NmdVRUlBOTdLNm1XUlpkWUhEMWVSMDNOUGFmQTBLenlpMEFCUVNXR0xn
+  -->

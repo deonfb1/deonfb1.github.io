@@ -1,0 +1,21 @@
+<!-- 1st: Get Code (Last one hour)
+
+https://api.instagram.com/oauth/authorize
+?client_id=3262845387330266
+&redirect_uri=https://deonfb1.github.io/
+&scope=user_profile,user_media
+&response_type=code 
+
+  --> 
+
+<!-- 2nd: Get short access_token & user_id --> 
+
+curl -X POST \
+  https://api.instagram.com/oauth/access_token \
+  -F client_id=3262845387330266 \
+  -F client_secret=38a8849d4e5154e0415a680074235754 \
+  -F grant_type=authorization_code \
+  -F redirect_uri=https://deonfb1.github.io/ \
+  -F code=AQAsXXS9fb9uFTp-PNsfRSNdCOrXRtW-Nm4JR2cD5Z8f0GJxzxGZl7ho8dkFxd82ieslhY97MQ00Cb5UjtBWku75KrUCbDxTrqprrFQzwVMwzJn8lQZpnXHST4tJ9uzZeJI-MByqhwmKWz5HsNvHmlorDgeFZamcYN43dVDvEn7SdxNJOdDO87da-BrB6exAWrtaPytZ3UgBsoIWL5Br8qvqyDTzohc5w4dr4qlsn0gMsA
+
+<!-- If it doesn't work use Postman--> 
