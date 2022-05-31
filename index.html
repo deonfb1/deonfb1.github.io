@@ -6,10 +6,10 @@
 <script>
     window.fbAsyncInit = function() {
       FB.init({
-        appId      : '{your-app-id}',
+        appId      : '709301793723961',
         cookie     : true,
         xfbml      : true,
-        version    : '{api-version}'
+        version    : 'v14.0'
       });
         
       FB.AppEvents.logPageView();   
@@ -23,6 +23,22 @@
        js.src = "https://connect.facebook.net/en_US/sdk.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
+
+     FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+  FB.login(function(response) {
+  // handle the response
+}, {scope: 'instagram_basic,pages_show_list,pages_read_engagement'});
+}
   </script>
+  <fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
 </body>
 </html>
